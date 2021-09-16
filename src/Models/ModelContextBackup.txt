@@ -1,0 +1,39 @@
+import React, { useState, createContext } from "react";
+
+export const ModelContext = createContext();
+
+export const ModelProvider = (props) => {
+  const [Name, setName] = useState("");
+  const [Path, setPath] = useState("");
+  const [Image, setImage] = useState("");
+  const [License, setLicense] = useState("");
+  const [Industry, setIndustry] = useState("");
+  const [IP, setIP] = useState("");
+  const [Description, setDescription] = useState("");
+  const [Confidentiality, setConfidentiality] = useState("");
+
+  return (
+    <ModelContext.Provider
+      value={{
+        Name,
+        setName,
+        Path,
+        setPath,
+        Image,
+        setImage,
+        License,
+        setLicense,
+        Industry,
+        setIndustry,
+        IP,
+        setIP,
+        Description,
+        setDescription,
+        Confidentiality,
+        setConfidentiality
+      }}
+    >
+      {props.children}
+    </ModelContext.Provider>
+  );
+};

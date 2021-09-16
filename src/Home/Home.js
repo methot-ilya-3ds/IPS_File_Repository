@@ -1,9 +1,9 @@
 import React from 'react';
-import './CSS/Intro.css';
-import car from './Images/car.png'
-import tire from './Images/tire.png'
+import '../CSS/Intro.css';
+import car from '../Images/car.png'
+import tire from '../Images/tire.png'
 
-export default function Home() {
+const Home = () => {
     return (
         <>
         <div id="Intro">
@@ -35,4 +35,5 @@ export default function Home() {
     )
 }
 
+export default Home;
 
