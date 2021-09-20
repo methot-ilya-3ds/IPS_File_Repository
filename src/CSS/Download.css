@@ -17,7 +17,7 @@ Body {
 
 #Content {
     display: block;
-    height: 100%;
+    height: auto;
     
 }
 
@@ -31,8 +31,8 @@ Body {
     align-items: flex-start;
     justify-content: flex-start;
     
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     
     padding: 3vw;
 
@@ -44,18 +44,22 @@ Body {
     flex-direction: row;
     flex-wrap: wrap;
     
-    align-content: flex-start;
-    justify-content: center;
+    align-content: space-around;
+    justify-content: space-around;
     align-items: flex-start;
+
+    flex: 2 1 auto;
     
     height: auto;
     width: 15vw;
     box-shadow: 0px 0px 10px #333;
     border-radius: 20px;
+
+    min-width: 300px;
     
-    background-color: #F2F2F2;
-    margin: 3vw;
-    transition: box-shadow .1s, transform 1s;
+    background-color: transparent;
+    margin: 4vw;
+    transition: box-shadow .1s, transform 2s;
 }
 
 .Download-Item:hover {
@@ -108,15 +112,11 @@ Body {
 }
 
 
-.Download-Item:hover .Download-Item-InfoText-row {
-    display: flex;
-
-}
 
 .Download-Item-InfoText-row-name{
     display: flex;
     flex-direction: row;  
-    font-size: 1vw; 
+    
     height: 25%;
     width: 100%;
     padding: 0px;
@@ -126,16 +126,35 @@ Body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    justify-content: center;
+
+    margin-bottom: 1vh;
 }
 
 .Download-Item-InfoText-row{
-    display: none;
+    display: flex;
     flex-direction: row;
     
-    font-size: .7vw;
+    font-size: 0vw;
+    padding: 0vw;
+    max-height: 0vw;
     height: 1vw;
-    padding: .1vw;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+
+    transition: max-height 2s ease, opacity 3s ease, transform 2s ease, padding 2s;
 }
 
-
+.Download-Item:hover .Download-Item-InfoText-row {
+    display: flex;
+    padding: .3vw;
+    font-size: clamp(8px, 1vw, 24px);
+    max-height: 1vw;
+    opacity: 1;
+    height: 1vw;
+    transform: scaleY(1);
+}
 

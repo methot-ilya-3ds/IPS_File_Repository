@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "IPS_File_Repository",
+			"path": "..\\IPS_File_Repository\\IPS_File_Repository"
+		},
+		{
+			"path": "..\\PHP"
+		}
+	],
+	"settings": {}
+}
