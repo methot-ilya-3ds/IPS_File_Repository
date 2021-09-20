@@ -4,7 +4,10 @@ import { Model } from "../Models/ModelDisplay.js";
 import { ModelsContext } from "../Models/ModelsContext";
 import background from "../Images/Background.png";
 import Astronaut from "../Models/Public/Astronaut.glb"
+<<<<<<< HEAD
 import ReactXR from "../ReactXR/ReactXR";
+=======
+>>>>>>> a6e006bb7c1dc9408a2a81be9f78bb36b84c88fa
 
 export const Download = () => {
 

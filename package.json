@@ -1,12 +1,19 @@
 {
   "name": "react-file-host",
+<<<<<<< HEAD
   "homepage": "http://methot-ilya-3ds.github.io/IPS_File_Repository",
+=======
+  "homepage": "/",
+>>>>>>> a6e006bb7c1dc9408a2a81be9f78bb36b84c88fa
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@google/model-viewer": "^1.8.0",
+<<<<<<< HEAD
     "@react-three/drei": "^7.9.0",
     "@react-three/fiber": "^7.0.7",
+=======
+>>>>>>> a6e006bb7c1dc9408a2a81be9f78bb36b84c88fa
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -20,10 +27,17 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
+<<<<<<< HEAD
     "react-three-fiber": "^6.0.13",
     "react-xr": "^1.1.0",
     "url-loader": "^4.1.1",
     "web-vitals": "^1.1.2"
+=======
+    "url-loader": "^4.1.1",
+    "web-vitals": "^1.1.2",
+    "com.facebook.fresco:animated-gif" :" 1.3.0",
+    "com.facebook.fresco:animated-base-support": "1.3.0"
+>>>>>>> a6e006bb7c1dc9408a2a81be9f78bb36b84c88fa
   },
   "scripts": {
     "start": "set PORT=5000 && react-scripts start",
